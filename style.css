@@ -1,0 +1,248 @@
+/* Ratings widget */
+@font-face
+{
+    font-family: 'anudawitalic';
+    src: url('../fonts/anudi-webfont.woff2') format('woff2'),
+         url('../fonts/anudi-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face
+{
+    font-family: 'anudawregular';
+    src: url('../fonts/anudrg-webfont.woff2') format('woff2'),
+         url('../fonts/anudrg-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+body {
+    background-color: white;
+    font-family: Arial;
+    margin: 0;
+    list-style-type: none;
+    overflow-y: hidden;
+}
+
+.headerBackgroundGkie{
+    padding: 30px;
+    background: rgb(0, 162, 255);
+    color: white;
+    height: 68px;
+}
+
+.logoGkie{
+    float: left;
+    height: 100px;
+    width: 100px;
+    margin: 0;
+    margin-top: -15px;
+    padding: 0;
+    overflow: hidden;
+}
+
+.titleGkie{
+    float: left;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 50px;
+    margin: 0;
+    margin-left: 20px;
+    margin-top: 5px;
+    padding: 0;
+    overflow: hidden;
+}
+
+#mainContainerGkie{
+    background-color: white;
+    height: 611px;
+    margin-top: -10px;
+}
+
+.mainLeftGkie{ 
+    float: left; 
+    width: 20%; 
+    height: 610px;
+    background-color: white;
+}
+
+.mainRightGkie{ 
+    float: right;
+    width: 46.8%;
+    height: 610px;
+    background-color: rgb(179, 176, 176);
+    overflow-y: scroll;
+}
+
+.mainCenterGkie{
+     display: inline-block;
+     width: 33%;
+     height: 610px;
+     background-color: white;
+     overflow-y: scroll;
+}
+
+.verticalLineGkie {
+    float: left;
+    width: 1px;
+    background-color: rgb(189, 189, 189);
+    height: 800px;
+    z-index: 10;
+}
+
+.teamContainerGkie {
+    margin-left: 30px;
+    margin-top: 60px;
+}
+
+.blueHeaderBGGkie {
+    background-color: rgb(24, 123, 148);
+    width: 100%;
+    height: 20px;
+    padding: 0;
+    z-index: 4;
+}
+
+.backgroundCharacterGkie{
+    width: 100%;
+    height: 300px;
+}
+
+.bannerCharacterGkie {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 20px;
+}
+
+.pictureCharacterGkie{
+    border-radius: 50%;
+    height: 25%;
+    width: 25%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 70px;
+}
+
+.starsCharacterGkie {
+    width: 30%;
+    margin-top: -270px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.starTextGkie {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: white;
+    display: block;
+    font-size: 25px;
+    text-align: center;
+}
+
+.infoCharacterTextGkie{
+    font-style: arial;
+}
+
+.infoAlignGkie {
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+li{ 
+    list-style-type: none;
+    text-decoration: none;
+
+}
+
+.teamNavGkie {
+    margin-left: -35px;
+}
+
+.teamTitleTextGkie{
+    font-family: Arial, Helvetica, sans-serif;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-size: 17px;
+}
+
+.teamTitleTextGkie a{
+    list-style-type: none;
+    text-decoration: none;
+    color: black;
+}
+
+.teamTitleTextGkie a:hover{
+    list-style-type: none;
+    text-decoration: none;
+    color: grey;
+}
+
+.teamTitleGkie {
+    color: rgb(0, 162, 255);
+    font-family: anudawregular;
+}
+
+
+.menuAlignGkie{
+    width: 450px;
+    height: 180px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    border: solid;
+    border-width: 1px;
+    border-color: black;
+}
+
+.characterMenuBannerGkie{
+    width: 100%;
+    height: 181px;
+}
+
+.characterMenuPictureGkie{
+    display: block;
+    margin-top: -184.5px;
+    padding-bottom: -50px;
+    height: 180px;
+    width: 32%;
+}
+
+.menuTitleGkie{
+    color: rgb(50, 128, 173);
+    font-family: anudawregular;
+}
+
+.menuTextAlignGkie
+{
+    display: block;
+    margin-top: -170px;
+    padding-left: 35%;
+    width: 65%;
+}
+
+.menuDescriptionGkie{
+    color: white;
+}
+
+.menuMoreInfoGkie a{
+    background-color: rgb(25, 160, 238);
+    color: white;
+    text-align: center;
+    font-size: 14px;
+    padding-left: 10px;  
+    padding-right: 10px; 
+    padding-top: 7px;
+    padding-bottom: 7px;
+    border-radius: 10%;
+    list-style-type: none;
+    text-decoration: none;
+}
+
+.menuMoreInfoGkie a:hover{
+    background-color: rgb(128, 205, 250);
+}
