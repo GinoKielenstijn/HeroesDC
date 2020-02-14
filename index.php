@@ -1,3 +1,12 @@
+<?php
+
+// include functions form inc/functions.php
+include("includes/functions.php");
+
+$teams = getTeams();
+
+?>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -8,84 +17,94 @@
 	<title>DC Heroes - Code Example Layout</title>
 </head>
 <body>
-	<header id="headerGkie">
-		<div class = "headerBackgroundGkie">
+	<header id="header">
+		<div class = "headerBackground">
 		<lu>
-			<li><img class="logoGkie" src="images/dclogo.png"></img></li>
-			<li><p class="titleGkie">Heroes</p></li>
+			<li><img class="logo" src="images/dclogo.png"></img></li>
+			<li><p class="title">Heroes</p></li>
 		</lu>
 		</div>
-		<div class="blueHeaderBGGkie"></div>
+		<div class="blueHeaderBG"></div>
 	</header>
 	
-<div id="mainContainerGkie">
-	<div class="mainLeftGkie">
-		<div class="teamContainerGkie">
-			<h1 class="teamTitleGkie">Teams</h1>
-			<nav class="teamNavGkie"><ul>
-	  		<li class="teamTitleTextGkie"><a href="index.php">Justice League</a></li>
-	  		<li class="teamTitleTextGkie"><a href="index.php">Flash Family</a></li>
-			<li class="teamTitleTextGkie"><a href="index.php">Batman and Robin</a></li>
-			<li class="teamTitleTextGkie"><a href="index.php">Teen Titans</a></li>
-			<li class="teamTitleTextGkie"><a href="index.php">Guardians of the Universe</a></li>
-			</ul></nav>
-			</div>
+<div id="mainContainer">
+	<div class="mainLeft">
+	<!-- Left column shows team name -->
+	<div class="teamContainer">
+		<h1 class="teamTitle">Teams</h1>
+		<nav class="teamNav">
+
+		<ul>
+			<?php
+			foreach($teams as $key => $team)
+			{
+			?>
+				<li class="teamTitleText"><?php echo $team["teamName"];?></li>
+			<?php
+			}
+			?>
+		</ul>
+
+		</nav>
 		</div>
-	<div class="verticalLineGkie">test</div>
-	<div class="mainCenterGkie">
-		<div class="menuAlignGkie">
-			<img class="characterMenuBannerGkie" src="images/header_bg.jpg"></img>
-			<img class="characterMenuPictureGkie" src="images/superman.jpg"></img>
-			<div class="menuTextAlignGkie">
-			<h3 class="menuTitleGkie">Superman</h3>
-			<p class="menuDescriptionGkie">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-			<a href="index.php"><div class="menuMoreInfoGkie">More Info</a></div>
+	</div>
+	<div class="verticalLine"></div>
+	<div class="mainCenter">
+		<!-- Maijn column shows team characters -->
+		<div class="menuAlign">
+			<img class="characterMenuBanner" src="images/header_bg.jpg"></img>
+			<img class="characterMenuPicture" src="images/superman.jpg"></img>
+			<div class="menuTextAlign">
+			<h3 class="menuTitle">Superman</h3>
+			<p class="menuDescription">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+			<a href="index.php"><div class="menuMoreInfo">More Info</a></div>
 			</div>
 		</div>
 
-		<div class="menuAlignGkie">
-			<img class="characterMenuBannerGkie" src="images/header_bg_even.jpg"></img>
-			<img class="characterMenuPictureGkie" src="images/loislane.jpg"></img>
-			<div class="menuTextAlignGkie">
-			<h3 class="menuTitleGkie">Lois Lane</h3>
-			<p class="menuDescriptionGkie">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-			<a href="index.php"><div class="menuMoreInfoGkie">More Info</a></div>
+		<div class="menuAlign">
+			<img class="characterMenuBanner" src="images/header_bg_even.jpg"></img>
+			<img class="characterMenuPicture" src="images/loislane.jpg"></img>
+			<div class="menuTextAlign">
+			<h3 class="menuTitle">Lois Lane</h3>
+			<p class="menuDescription">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+			<a href="index.php"><div class="menuMoreInfo">More Info</a></div>
 			</div>
 		</div>
 
-		<div class="menuAlignGkie">
-			<img class="characterMenuBannerGkie" src="images/header_bg.jpg"></img>
-			<img class="characterMenuPictureGkie" src="images/green_lantern.jpg"></img>
-			<div class="menuTextAlignGkie">
-			<h3 class="menuTitleGkie">Green Lantern</h3>
-			<p class="menuDescriptionGkie">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-			<a href="index.php"><div class="menuMoreInfoGkie">More Info</a></div>
+		<div class="menuAlign">
+			<img class="characterMenuBanner" src="images/header_bg.jpg"></img>
+			<img class="characterMenuPicture" src="images/green_lantern.jpg"></img>
+			<div class="menuTextAlign">
+			<h3 class="menuTitle">Green Lantern</h3>
+			<p class="menuDescription">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+			<a href="index.php"><div class="menuMoreInfo">More Info</a></div>
 			</div>
 		</div>
 	</div>
-	<div class="mainRightGkie">
-		<header class="bannerCharacterGkie">
-			<img class="backgroundCharacterGkie" src="images/header_bg.jpg">
-			<img class="starsCharacterGkie" src="images/stars.png">
-			<h1 class="starTextGkie">Above Average</h1>
-			<img class="pictureCharacterGkie" src="images/superman2.jpg">
+	<div class="mainRight">
+		<!-- right column shows character information -->
+		<header class="bannerCharacter">
+			<img class="backgroundCharacter" src="images/header_bg.jpg">
+			<img class="starsCharacter" src="images/stars.png">
+			<h1 class="starText">Above Average</h1>
+			<img class="pictureCharacter" src="images/superman2.jpg">
 		</header>
-	<div class="infoAlignGkie">
-		<div class="infoGkie">
-			<h1 class="infoCharacterGkie">Info</h1>
-			<p class="infoCharacterTextGkie">
-			Lorem ipsum dolor sit amet consectetur adipisicing elit.
-			Ipsum autem quisquam assumenda laborum, nulla, ipsam ea, 
-			harum quaerat minima nostrum consequuntur doloribus? 
-			Ipsa ullam omnis neque laborum vero mollitia voluptatum.
-			Lorem ipsum dolor sit amet consectetur adipisicing elit.
-			Ipsum autem quisquam assumenda laborum, nulla, ipsam ea, 
-			harum quaerat minima nostrum consequuntur doloribus? 
-			Ipsa ullam omnis neque laborum vero mollitia voluptatum.
-			</p>
+		<div class="infoAlign">
+			<div class="info">
+				<h1 class="infoCharacter">Info</h1>
+				<p class="infoCharacterText">
+				Lorem ipsum dolor sit amet consectetur adipisicing elit.
+				Ipsum autem quisquam assumenda laborum, nulla, ipsam ea, 
+				harum quaerat minima nostrum consequuntur doloribus? 
+				Ipsa ullam omnis neque laborum vero mollitia voluptatum.
+				Lorem ipsum dolor sit amet consectetur adipisicing elit.
+				Ipsum autem quisquam assumenda laborum, nulla, ipsam ea, 
+				harum quaerat minima nostrum consequuntur doloribus? 
+				Ipsa ullam omnis neque laborum vero mollitia voluptatum.
+				</p>
+			</div>
 		</div>
 	</div>
-</div>
 </div>
 </body>
 </html>

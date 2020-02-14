@@ -27,14 +27,14 @@ body {
     overflow-y: hidden;
 }
 
-.headerBackgroundGkie{
+.headerBackground{
     padding: 30px;
     background: rgb(0, 162, 255);
     color: white;
     height: 68px;
 }
 
-.logoGkie{
+.logo{
     float: left;
     height: 100px;
     width: 100px;
@@ -44,7 +44,7 @@ body {
     overflow: hidden;
 }
 
-.titleGkie{
+.title{
     float: left;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-size: 50px;
@@ -55,20 +55,20 @@ body {
     overflow: hidden;
 }
 
-#mainContainerGkie{
+#mainContainer{
     background-color: white;
     height: 611px;
     margin-top: -10px;
 }
 
-.mainLeftGkie{ 
+.mainLeft{ 
     float: left; 
     width: 20%; 
     height: 610px;
     background-color: white;
 }
 
-.mainRightGkie{ 
+.mainRight{ 
     float: right;
     width: 46.8%;
     height: 610px;
@@ -76,7 +76,7 @@ body {
     overflow-y: scroll;
 }
 
-.mainCenterGkie{
+.mainCenter{
      display: inline-block;
      width: 33%;
      height: 610px;
@@ -84,7 +84,7 @@ body {
      overflow-y: scroll;
 }
 
-.verticalLineGkie {
+.verticalLine {
     float: left;
     width: 1px;
     background-color: rgb(189, 189, 189);
@@ -92,12 +92,12 @@ body {
     z-index: 10;
 }
 
-.teamContainerGkie {
+.teamContainer {
     margin-left: 30px;
     margin-top: 60px;
 }
 
-.blueHeaderBGGkie {
+.blueHeaderBG {
     background-color: rgb(24, 123, 148);
     width: 100%;
     height: 20px;
@@ -105,18 +105,18 @@ body {
     z-index: 4;
 }
 
-.backgroundCharacterGkie{
+.backgroundCharacter{
     width: 100%;
     height: 300px;
 }
 
-.bannerCharacterGkie {
+.bannerCharacter {
     padding-left: 20px;
     padding-right: 20px;
     padding-top: 20px;
 }
 
-.pictureCharacterGkie{
+.pictureCharacter{
     border-radius: 50%;
     height: 25%;
     width: 25%;
@@ -126,7 +126,7 @@ body {
     margin-top: 70px;
 }
 
-.starsCharacterGkie {
+.starsCharacter {
     width: 30%;
     margin-top: -270px;
     display: block;
@@ -134,7 +134,7 @@ body {
     margin-right: auto;
 }
 
-.starTextGkie {
+.starText {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     color: white;
     display: block;
@@ -142,11 +142,11 @@ body {
     text-align: center;
 }
 
-.infoCharacterTextGkie{
+.infoCharacterText{
     font-style: arial;
 }
 
-.infoAlignGkie {
+.infoAlign {
     padding-left: 50px;
     padding-right: 50px;
 }
@@ -157,36 +157,36 @@ li{
 
 }
 
-.teamNavGkie {
+.teamNav {
     margin-left: -35px;
 }
 
-.teamTitleTextGkie{
+.teamTitleText{
     font-family: Arial, Helvetica, sans-serif;
     padding-top: 5px;
     padding-bottom: 5px;
     font-size: 17px;
 }
 
-.teamTitleTextGkie a{
+.teamTitleText a{
     list-style-type: none;
     text-decoration: none;
     color: black;
 }
 
-.teamTitleTextGkie a:hover{
+.teamTitleText a:hover{
     list-style-type: none;
     text-decoration: none;
     color: grey;
 }
 
-.teamTitleGkie {
+.teamTitle {
     color: rgb(0, 162, 255);
     font-family: anudawregular;
 }
 
 
-.menuAlignGkie{
+.menuAlign{
     width: 450px;
     height: 180px;
     display: block;
@@ -199,12 +199,12 @@ li{
     border-color: black;
 }
 
-.characterMenuBannerGkie{
+.characterMenuBanner{
     width: 100%;
     height: 181px;
 }
 
-.characterMenuPictureGkie{
+.characterMenuPicture{
     display: block;
     margin-top: -184.5px;
     padding-bottom: -50px;
@@ -212,12 +212,12 @@ li{
     width: 32%;
 }
 
-.menuTitleGkie{
+.menuTitle{
     color: rgb(50, 128, 173);
     font-family: anudawregular;
 }
 
-.menuTextAlignGkie
+.menuTextAlign
 {
     display: block;
     margin-top: -170px;
@@ -225,11 +225,11 @@ li{
     width: 65%;
 }
 
-.menuDescriptionGkie{
+.menuDescription{
     color: white;
 }
 
-.menuMoreInfoGkie a{
+.menuMoreInfo a{
     background-color: rgb(25, 160, 238);
     color: white;
     text-align: center;
@@ -243,6 +243,6 @@ li{
     text-decoration: none;
 }
 
-.menuMoreInfoGkie a:hover{
+.menuMoreInfo a:hover{
     background-color: rgb(128, 205, 250);
 }
